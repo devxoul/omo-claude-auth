@@ -1,0 +1,14 @@
+{
+  "name": "omo-claude-auth",
+  "version": "0.1.0",
+  "private": true,
+  "description": "omo/senpi extension that wraps opencode-claude-auth to reuse Claude Code credentials",
+  "type": "module",
+  "keywords": ["pi-package"],
+  "pi": {
+    "extensions": ["./index.ts"]
+  },
+  "dependencies": {
+    "opencode-claude-auth": "^2.2.1"
+  }
+}
