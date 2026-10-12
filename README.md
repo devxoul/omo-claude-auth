@@ -23,13 +23,23 @@ To get plugin fixes, run `bun update opencode-claude-auth`.
 
 ## Installation
 
+Add the npm package to `packages` in your omo settings (`~/.omo/agent/settings.json`):
+
+```json
+{
+  "packages": ["npm:omo-claude-auth"]
+}
+```
+
+Or install from source:
+
 ```sh
 git clone https://github.com/devxoul/omo-claude-auth.git
 cd omo-claude-auth
 bun install
 ```
 
-Add the folder to `packages` in your omo settings (`~/.omo/agent/settings.json`). Relative paths resolve from the agent directory:
+Then add the folder to `packages`. Relative paths resolve from the agent directory:
 
 ```json
 {
